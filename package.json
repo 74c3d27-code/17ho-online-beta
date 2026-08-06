@@ -1,0 +1,19 @@
+{
+  "name": "17ho-online-beta",
+  "version": "0.10.3",
+  "private": true,
+  "description": "Fresh bootstrap for 十七歩 online Group Beta",
+  "type": "module",
+  "scripts": {
+    "apply-release": "node apply-release.mjs",
+    "test": "node apply-release.mjs && node tests/run-all.mjs",
+    "dev": "node apply-release.mjs && wrangler dev",
+    "deploy": "node apply-release.mjs && wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "latest"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
